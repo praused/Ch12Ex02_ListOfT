@@ -10,6 +10,14 @@ namespace Ch12Ex02_ListOfT
     {
         static void Main(string[] args)
         {
+            List<Animal> animalCollection = new List<Animal>();
+            animalCollection.Add(new Cow("Jack"));
+            animalCollection.Add(new Chicken("Vera"));
+            foreach (Animal myAnimal in animalCollection)
+            {
+                myAnimal.Feed();
+            }
+            Console.ReadLine();
         }
     }
 }
